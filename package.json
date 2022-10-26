@@ -1,0 +1,22 @@
+{
+  "name": "entrega_3_dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marce3200/entrega_3_dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marce3200/entrega_3_dashboard/issues"
+  },
+  "homepage": "https://github.com/Marce3200/entrega_3_dashboard#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
