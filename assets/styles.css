@@ -1,0 +1,42 @@
+body {
+    background: url(./imgs/mapa-dashboard-mobile.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+.logo {
+    width: 250px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.descripcion{
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 90%;
+    letter-spacing: 0.3px;
+    
+}
+
+.form-select {
+    border: 0px;
+    opacity: 50%;
+    margin-bottom: 30px;
+    width: 90%;
+}
+.card{
+    border: 0px;
+    opacity: 50%;
+    width: 90%;
+}
+footer{
+    width: 100%;
+    font-size: 9px;
+   margin-top: 65px;
+    background-color:  #1C1C1C;
+}
