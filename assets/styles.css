@@ -1,0 +1,55 @@
+body {
+    background: url(./imgs/mapa-dashboard.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 1000px;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+.logo {
+    width: 250px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.descripcion{
+    
+    font-size: 12px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 90%;
+    letter-spacing: 0.3px;
+    
+}
+
+.form-select {
+    border: 0px;
+    opacity: 50%;
+    margin-bottom: 20px;
+    width: 90%;
+    font-size: small;
+}
+
+.card{
+    border: 0px;
+    opacity: 50%;
+    width: 90%;
+}
+footer{
+    width: 100%;
+    font-size: 9px;
+   
+    background-color:  #1C1C1C;
+}
+.main {
+flex:1;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
