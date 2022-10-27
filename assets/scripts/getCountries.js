@@ -1,5 +1,6 @@
 import getUrl from "./getUrl.js";
 
+
 const getCountries = () => {
   getUrl("https://restcountries.com/v3.1/lang/spanish").then((response) => {
     const paises = document.getElementById("pais");
