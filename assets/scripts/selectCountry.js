@@ -16,7 +16,7 @@ const selectCountry = (pais) => {
     const message = document.getElementById("message");
     if (!sismos.length) {
       message.innerHTML =
-        "No hay datos para mostrar, por favor elige otro país";
+        "No hay datos para mostrar, Por favor elige otro país";
     } else {
       message.innerHTML = "";
     }

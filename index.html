@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sismos</title>
+    <title>Sismos en el mundo</title>
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -27,7 +27,7 @@
     <div class="contenedor">
 
         <header class="row justify-content-center">
-            <img class="logo" src="./assets/imgs/logo.api.png" alt="logo">
+            <img class="logo" src="./assets/imgs/logo.api.png" alt="logo app sismos">
             <p class="descripcion text-center">Conoce los sismos en tiempo real
                 de todos los países del mundo.<br> Tan solo debes seleccionar el
                 país que deseas revisar y se desplegarán los últimos 15 sismos
@@ -39,7 +39,7 @@
         <div class="main row container-fluid">
             <div class="input col-sm-12 col-md-3 ">
                 <select id="pais" class="form-select w-100 text-center"
-                    aria-label="Example select with button addon" alt="selecciona pais">
+                    aria-label="Example select with button addon" alt="selecciona un pais de la lista">
                     <option selected disabled>Elegir País</option>
                 </select>
                 <div class="message-error text-center mb-3" id="message"></div>
@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="mb-2 me-2 d-flex justify-content-end">
-                    <p class="leyenda" alt="leyenda"> <i class="fa-solid fa-circle circle-green me-1"></i>Sismos de magnitud menor a 4<br>
+                    <p class="leyenda" alt="diferencias de colores en el gráfico según magnitud del sismo"> <i class="fa-solid fa-circle circle-green me-1"></i>Sismos de magnitud menor a 4<br>
                                         <i class="fa-solid fa-circle circle-blue me-1"></i>Sismos de magnitud 4 a  5<br>
                                          <i class="fa-solid fa-circle circle-red me-1"></i>Sismos de magnitud mayor a 5</p>
                 </div>
