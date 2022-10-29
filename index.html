@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./assets/styles.css">
 
-
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     </script
         href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;700&display=swap"
         rel="stylesheet" />
@@ -28,39 +28,47 @@
     <div class="contenedor">
 
         <header class="row justify-content-center">
-            <img class="logo" src="./assets/imgs/logo.api.png" alt="">
+            <img class="logo" src="./assets/imgs/logo.api.png" alt="logo">
             <p class="descripcion text-center">Conoce los sismos en tiempo real
                 de todos los países del mundo.<br> Tan solo debes seleccionar el
                 país que deseas revisar y se desplegarán los últimos 15 sismos
                 en el gráfico con sus respectivas fechas y magnitudes.
+                
             </p>
         </header>
 
         <div class="main row container-fluid">
-            <div class="input col-12-sm col-md-3 ">
-                <select id="pais" class="form-select text-center"
-                    aria-label="Example select with button addon">
+            <div class="input col-sm-12 col-md-3">
+                <select id="pais" class="form-select w-100 text-center"
+                    aria-label="Example select with button addon" alt="selecciona pais">
                     <option selected disabled>Elegir País</option>
                 </select>
                 <div id="message"></div>
                 <!-- <button type="button" class="btn btn-primary">Primary</button> -->
             </div>
 
-            <div class="grafico col-12-sm col-md-9">
-                <div class="card" style="height: 600px">
+            <div class="grafico col-sm-12 col-md-9">
+                <div class="card w-100 mb-3">
                     <div class="card-body">
 
                         <canvas id="sismosChile" width="400"
-                            height="400"></canvas>
+                            height="300" alt="grafico sismos"></canvas>
                     </div>
                 </div>
+                <div class="mb-2 me-2 d-flex justify-content-end">
+                    <p class="leyenda" alt="leyenda"> <i class="fa-solid fa-circle circle-green me-1"></i>Sismos de magnitud menor a 4<br>
+                                        <i class="fa-solid fa-circle circle-blue me-1"></i>Sismos de magnitud 4 a  5<br>
+                                         <i class="fa-solid fa-circle circle-red me-1"></i>Sismos de magnitud mayor a 5</p>
+                </div>
             </div>
+
+
         </div>
 
         <footer class="footer">
             <div class="d-flex flex-column align-items-center">
-                <div class="text-light mt-2">
-                    <p class="texto-footer">App desarrollada por Marcela Quezada
+                <div class="text-light mt-2 mb-2">
+                    <p class="texto-footer" alt="footer">App desarrollada por Marcela Quezada
                         y
                         Antonia Argandoña
                     </p>
@@ -76,6 +84,7 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+    <script src="./main.js" type="module"></script>
 
 </body>
 

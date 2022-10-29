@@ -24,11 +24,11 @@ const selectCountry = (pais) => {
     const colorBar = [...sismos]
       .map((sismo) => {
         if (sismo.magnitude < 4) {
-          return "green"; // cambiar color por colores lindos
+          return "#d1e5b7"; // cambiar color por colores lindos
         } else if (sismo.magnitude < 5) {
-          return "orange";
+          return "#4b71e5";
         }
-        return "red";
+        return "#f95d82";
       })
       .reverse();
 
