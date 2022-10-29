@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sismos</title>
-    <!-- CSS only -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -38,13 +37,13 @@
         </header>
 
         <div class="main row container-fluid">
-            <div class="input col-sm-12 col-md-3">
+            <div class="input col-sm-12 col-md-3 ">
                 <select id="pais" class="form-select w-100 text-center"
                     aria-label="Example select with button addon" alt="selecciona pais">
                     <option selected disabled>Elegir País</option>
                 </select>
-                <div id="message"></div>
-                <!-- <button type="button" class="btn btn-primary">Primary</button> -->
+                <div class="message-error text-center mb-3" id="message"></div>
+        
             </div>
 
             <div class="grafico col-sm-12 col-md-9">
@@ -61,22 +60,18 @@
                                          <i class="fa-solid fa-circle circle-red me-1"></i>Sismos de magnitud mayor a 5</p>
                 </div>
             </div>
-
-
         </div>
-
         <footer class="footer">
             <div class="d-flex flex-column align-items-center">
                 <div class="text-light mt-2 mb-2">
-                    <p class="texto-footer" alt="footer">App desarrollada por Marcela Quezada
-                        y
-                        Antonia Argandoña
+                    <small>&copy;marcedev y Antonia Argandoña 2022 - Todo Los Derechos Reservados</small>
+                   
+                        
                     </p>
                 </div>
             </div>
         </footer>
     </div>
-
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <!-- JavaScript Bundle with Popper -->
@@ -87,5 +82,4 @@
     <script src="./main.js" type="module"></script>
 
 </body>
-
 </html>
