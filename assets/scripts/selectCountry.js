@@ -1,7 +1,7 @@
 import getUrl from "./getUrl.js";
 
 const selectCountry = (pais) => {
-  // let pais = document.getElementById('pais').value; //link a select de html, extrae valor seleccionado (value)
+ 
   let magnitudArray = [];
   let fechasArray = [];
 
@@ -10,9 +10,7 @@ const selectCountry = (pais) => {
     pais;
 
   getUrl(url).then((data) => {
-    const sismos = data["ultimos_sismos_" + pais]; // ultimo sismos es la propiedad del obejto----para poder concatenar, ponemos atributos entre comillas y lo podemos concatenar con la variable
-    //es la forma para concatenar datos a la propiedad de un objeto.
-    //con punto (.) no sirve pa concatenar
+    const sismos = data["ultimos_sismos_" + pais]; 
     const message = document.getElementById("message");
     if (!sismos.length) {
       message.innerHTML =
@@ -24,7 +22,7 @@ const selectCountry = (pais) => {
     const colorBar = [...sismos]
       .map((sismo) => {
         if (sismo.magnitude < 4) {
-          return "#d1e5b7"; // cambiar color por colores lindos
+          return "#d1e5b7"; 
         } else if (sismo.magnitude < 5) {
           return "#4b71e5";
         }
@@ -33,21 +31,21 @@ const selectCountry = (pais) => {
       .reverse();
 
     magnitudArray = [...sismos]
-      .reverse() //estamos recorriendo sismos(ultimos_sismos)que es un array de objetos, recolectando propiedad magnitud
+      .reverse() 
       .map((sismo) => sismo.magnitude);
 
     fechasArray = [...sismos]
-      .reverse() //revisar si le ponemos moment, modificar despues de flecha.
+      .reverse() 
       .map((sismo) => {
         let fecha = new Date(sismo.chilean_time);
         console.log(fecha);
         return `${fecha.getDate()}/${fecha.getMonth()} ${fecha.getHours()}:${fecha.getMinutes()}`;
       });
 
-    //para actualizar info del chart
-    myChart.data.labels = fechasArray; // eje x
-    myChart.data.datasets[0].label = pais; // nombre pais, titulo
-    myChart.data.datasets[0].data = magnitudArray; // eje y
+   
+    myChart.data.labels = fechasArray; 
+    myChart.data.datasets[0].label = pais; 
+    myChart.data.datasets[0].data = magnitudArray; 
     myChart.data.datasets[0].backgroundColor = colorBar;
     myChart.update();
   });
