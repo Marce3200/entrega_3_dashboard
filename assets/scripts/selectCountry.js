@@ -39,7 +39,7 @@ const selectCountry = (pais) => {
       .map((sismo) => {
         let fecha = new Date(sismo.chilean_time);
         console.log(fecha);
-        return `${fecha.getDate()}/${fecha.getMonth()} ${fecha.getHours()}:${fecha.getMinutes()}`;
+        return `${fecha.getDate()}/${fecha.getMonth() +1} ${fecha.getHours()}:${fecha.getMinutes()}`;
       });
 
    
